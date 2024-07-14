@@ -1,4 +1,0 @@
-- Dự án tâm huyết
-- Phục vụ thi tin học trẻ cấp vùng
-- Được thực hiện bởi Bình và Hùng và Khang
-- Thời gian 16 ngày

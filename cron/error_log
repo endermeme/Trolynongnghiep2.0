@@ -1,0 +1,46 @@
+[05-Jul-2024 10:31:03 UTC] PHP Warning:  require_once(../../core/DB.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:31:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/DB.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:31:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'created_date' in 'where clause' in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:28
+Stack trace:
+#0 /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php(28): mysqli->query('SELECT id FROM ...')
+#1 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 28
+[05-Jul-2024 10:31:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'created_date' in 'where clause' in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:28
+Stack trace:
+#0 /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php(28): mysqli->query('SELECT id FROM ...')
+#1 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 28
+[05-Jul-2024 10:31:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'created_date' in 'where clause' in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:28
+Stack trace:
+#0 /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php(28): mysqli->query('SELECT id FROM ...')
+#1 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 28
+[05-Jul-2024 10:33:22 UTC] PHP Warning:  require_once(../../core/DB.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:33:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/DB.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:33:40 UTC] PHP Warning:  require_once(../../core/DB.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:33:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/DB.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:33:49 UTC] PHP Warning:  require_once(../../core/DB.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 2
+[05-Jul-2024 10:33:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/DB.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 2
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  include(../../core/DB.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 2
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  include(): Failed opening '../../core/DB.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 2
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  include(../../core/helpers.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  include(): Failed opening '../../core/helpers.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 3
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  include(../../core/is_user.php): Failed to open stream: No such file or directory in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 4
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  include(): Failed opening '../../core/is_user.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 4
+[05-Jul-2024 10:34:05 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 6
+[05-Jul-2024 10:34:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/cron/cron.php on line 6

@@ -1,0 +1,16 @@
+[05-Jul-2024 20:05:55 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method DB::truncate() in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php on line 10
+[05-Jul-2024 20:07:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method DB::truncate() in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php on line 10
+[05-Jul-2024 20:07:33 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method DB::truncate() in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php on line 10
+[05-Jul-2024 20:08:45 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method DB::delete() in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/ajaxs/admin/deleteall.php on line 10

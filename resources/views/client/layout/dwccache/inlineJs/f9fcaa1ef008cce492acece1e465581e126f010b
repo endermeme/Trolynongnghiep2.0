@@ -1,0 +1,1 @@
+s:259:"<script type="text/javascript">$(document).ready(function(){$("#loaithe").change(function(){$.ajax({type:'POST',url:'http://localhost//api/amount.php',data:{loai:$("#loaithe").val()},success:function(response){$("#menhgia").html(response);},});});});</script>";

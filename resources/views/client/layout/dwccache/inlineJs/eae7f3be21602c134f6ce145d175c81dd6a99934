@@ -1,0 +1,1 @@
+s:366:"<script type="text/javascript">$(document).ready(function(){let isRead=localStorage.getItem('isRead');if(isRead){let now=Date.now();if(now>=isRead){localStorage.clear('isRead');isRead=null;}}1NS3R7N3WL1N3if(!isRead){$('#modalNoti').modal('show')}1NS3R7N3WL1N3$('.btn-read').click(function(e){let now=Date.now();localStorage.setItem('isRead',now+3600*60)})})</script>";

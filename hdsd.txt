@@ -1,0 +1,4 @@
+truy cập /core/DB.php
+sửa lại chỗ $this->connect = mysqli_connect('localhost', 'root', 'root', 'root') or die('Error => DATABASE'); 
+thay root thành tên db, user, pass (khuyên bro nên đặt user pass db giống nhau không cần phải loằng ngoằng :)))
+nếu như code ko chạy đc thì chỉnh lại phiên bản php

@@ -1,0 +1,115 @@
+[25-Jun-2024 13:42:18 UTC] PHP Fatal error:  Uncaught Error: Class "DB" not found in /home/igfmksvy/1.fptbinhthuan.org/core/helpers.php:2
+Stack trace:
+#0 /home/igfmksvy/1.fptbinhthuan.org/demo/index.php(3): include()
+#1 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/core/helpers.php on line 2
+[25-Jun-2024 13:42:22 UTC] PHP Fatal error:  Uncaught Error: Class "DB" not found in /home/igfmksvy/1.fptbinhthuan.org/core/helpers.php:2
+Stack trace:
+#0 /home/igfmksvy/1.fptbinhthuan.org/demo/index.php(3): include()
+#1 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/core/helpers.php on line 2
+[25-Jun-2024 13:42:24 UTC] PHP Fatal error:  Uncaught Error: Class "DB" not found in /home/igfmksvy/1.fptbinhthuan.org/core/helpers.php:2
+Stack trace:
+#0 /home/igfmksvy/1.fptbinhthuan.org/demo/index.php(3): include()
+#1 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/core/helpers.php on line 2
+[25-Jun-2024 13:43:52 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 20
+[25-Jun-2024 13:43:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 20
+[25-Jun-2024 13:45:10 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 20
+[25-Jun-2024 13:45:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 20
+[25-Jun-2024 13:46:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 25
+[25-Jun-2024 13:46:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 25
+[25-Jun-2024 13:46:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 25
+[25-Jun-2024 13:49:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 26
+[25-Jun-2024 13:49:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 29
+[25-Jun-2024 13:51:06 UTC] PHP Parse error:  Unclosed '{' on line 17 in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 43
+[25-Jun-2024 13:51:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:51:23 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:51:38 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:51:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:52:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:52:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 26
+[25-Jun-2024 13:52:31 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 28
+[25-Jun-2024 13:52:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 28
+[25-Jun-2024 13:52:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 29
+[25-Jun-2024 13:53:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 30
+[25-Jun-2024 13:53:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 31
+[25-Jun-2024 13:54:52 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:54:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:55:58 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 13:55:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 14:03:47 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 14:03:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 17
+[25-Jun-2024 14:04:07 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 36
+[25-Jun-2024 14:04:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 36
+[25-Jun-2024 14:04:24 UTC] PHP Warning:  Undefined variable $NNL in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 44
+[25-Jun-2024 14:04:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_list() on null in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/igfmksvy/1.fptbinhthuan.org/demo/index.php on line 44

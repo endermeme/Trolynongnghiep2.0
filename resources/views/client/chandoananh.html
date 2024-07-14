@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hệ thống phát hiện bệnh trên cây trồng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f8ff; /* Màu nền xanh nước biển nhạt */
+            text-align: center;
+            position: relative;
+            padding-top: 60px; /* Khoảng trống cho header */
+        }
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1e90ff;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .back-button {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            background-color: #ffffff33; /* Màu trắng với độ trong suốt */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ffffff55;
+        }
+        .back-button img {
+            margin-right: 8px;
+            height: 20px;
+        }
+        .logo {
+            max-height: 40px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.5em;
+            background: linear-gradient(90deg, red, yellow, green, cyan, blue, violet);
+            background-size: 600% 100%;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradient 10s linear infinite;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        #upload-container {
+            background: #ffffff; /* Màu nền trắng */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 90%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #imagePreview {
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #label-container {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .prediction-container {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .prediction-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .prediction-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        .prediction-fill {
+            height: 24px;
+            background-color: #1e90ff;
+            text-align: right;
+            padding-right: 5px;
+            line-height: 24px;
+            color: white;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px dashed #1e90ff; /* Màu xanh nước biển đậm cho viền */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: border-color 0.3s;
+            background-color: #d1f0f9; /* Màu nền xanh nước biển nhạt */
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="file"]:hover {
+            border-color: #005b8e; /* Màu xanh nước biển đậm hơn khi di chuột qua */
+        }
+        .diagnosis-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: blue; /* Màu nền nút */
+            color: white; /* Màu chữ */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none; /* Loại bỏ gạch chân */
+            width: calc(100% - 40px);
+        }
+        .diagnosis-button:hover {
+            background-color: #45a049; /* Màu nền nút khi hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="back-button" href="https://1.fptbinhthuan.org">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/left.png" alt="Quay lại" />
+            Quay lại
+        </a>
+        <img class="logo" src="https://1.fptbinhthuan.org/public/mainlogo.svg" alt="Logo" />
+    </header>
+    <h2>Chẩn đoán sâu bệnh bằng hình ảnh</h2>
+    <div id="upload-container">
+        <input id="imageUpload" type="file" />
+        <img id="imagePreview" src="#" alt="Ảnh xem trước" />
+        <div id="label-container"></div>
+        <a href="/chuandoan" class="diagnosis-button">Chẩn đoán Camera 📷</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script>
+        const URL = 'https://teachablemachine.withgoogle.com/models/Iw6h_tAGq/';
+
+        let model, labelContainer, maxPredictions;
+
+        async function init() {
+            const modelURL = URL + 'model.json';
+            const metadataURL = URL + 'metadata.json';
+
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById('label-container');
+            labelContainer.innerHTML = '';  // Clear existing labels
+            for (let i = 0; i < maxPredictions; i++) {
+                const predictionContainer = document.createElement("div");
+                predictionContainer.className = "prediction-container";
+                const label = document.createElement("div");
+                label.className = "prediction-label";
+                const bar = document.createElement("div");
+                bar.className = "prediction-bar";
+                const fill = document.createElement("div");
+                fill.className = "prediction-fill";
+                bar.appendChild(fill);
+                predictionContainer.appendChild(label);
+                predictionContainer.appendChild(bar);
+                labelContainer.appendChild(predictionContainer);
+            }
+        }
+
+        async function predict() {
+            const image = document.getElementById('imagePreview');
+            const predictions = await model.predict(image, false);
+            for (let i = 0; i < maxPredictions; i++) {
+                const classPrediction = predictions[i].className + ": " + (predictions[i].probability * 100).toFixed(2) + "%";
+                const predictionContainer = labelContainer.childNodes[i];
+                predictionContainer.childNodes[0].innerHTML = classPrediction;
+                const fill = predictionContainer.childNodes[1].childNodes[0];
+                fill.style.width = (predictions[i].probability * 100) + "%";
+                fill.innerHTML = (predictions[i].probability * 100).toFixed(2) + "%";
+            }
+        }
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                    init().then(() => {
+                        predict();
+                    });
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        document.getElementById('imageUpload').addEventListener('change', function () {
+            readURL(this);
+        });
+    </script>
+</body>
+</html>
